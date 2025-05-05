@@ -11,14 +11,14 @@ const Hero = () => {
     gsap.fromTo(
       ".hero-text h1",
       { y: 50, opacity: 0 },
-      { y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "power2.inOut" }
+      { y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "power2.inOut" },
     );
   });
 
   return (
     <section id="hero" className="relative overflow-hidden">
       <div className="absolute top-0 left-0 z-10">
-        <img src="/images/bg.png" alt="" />
+        <img src={import.meta.env.BASE_URL + "/images/bg.png"} alt="" />
       </div>
 
       <div className="hero-layout">
@@ -36,7 +36,7 @@ const Hero = () => {
                         className="flex items-center md:gap-3 gap-1 pb-2"
                       >
                         <img
-                          src={word.imgPath}
+                          src={import.meta.env.BASE_URL + word.imgPath}
                           alt="person"
                           className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50"
                         />

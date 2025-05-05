@@ -16,7 +16,7 @@ const Testimonials = () => {
             <GlowCard card={testimonial} key={index} index={index}>
               <div className="flex items-center gap-3">
                 <div>
-                  <img src={testimonial.imgPath} alt="" />
+                  <img src={import.meta.env.BASE_URL + testimonial.imgPath} alt="" />
                 </div>
                 <div>
                   <p className="font-bold">{testimonial.name}</p>

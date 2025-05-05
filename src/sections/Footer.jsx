@@ -12,7 +12,7 @@ const Footer = () => {
             <a href={social.link} target="_blank" key={index}>
               <div className="icon">
                 <img
-                  src={social.imgPath}
+                  src={import.meta.env.BASE_URL + social.imgPath}
                   alt="social icon"
                   style={{
                     width: "28px",

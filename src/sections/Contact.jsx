@@ -39,7 +39,6 @@ const Contact = () => {
         form.subject,
       )}&body=${encodeURIComponent(form.message)}`;
       a.click();
-      
     } catch (error) {
       console.error("EmailJS Error:", error); // Optional: show toast
     } finally {
@@ -107,7 +106,12 @@ const Contact = () => {
                       {loading ? "Sending..." : "Send Message"}
                     </p>
                     <div className="arrow-wrapper">
-                      <img src="/images/arrow-down.svg" alt="arrow" />
+                      <img
+                        src={
+                          import.meta.env.BASE_URL + "/images/arrow-down.svg"
+                        }
+                        alt="arrow"
+                      />
                     </div>
                   </div>
                 </button>

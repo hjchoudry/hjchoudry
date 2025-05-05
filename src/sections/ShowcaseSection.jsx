@@ -49,7 +49,10 @@ const AppShowcase = () => {
         <div className="showcaselayout">
           <div ref={rydeRef} className="first-project-wrapper">
             <div className="image-wrapper">
-              <img src="/images/projects/project1.png" alt="Ryde App Interface" />
+              <img
+                src={import.meta.env.BASE_URL + "/images/projects/project1.png"}
+                alt="Ryde App Interface"
+              />
             </div>
             <div className="text-content">
               <h2>
@@ -73,7 +76,7 @@ const AppShowcase = () => {
             <div className="project" ref={libraryRef}>
               <div className="image-wrapper bg-[#FFEFDB]">
                 <img
-                  src="/images/projects/project2.png"
+                  src={import.meta.env.BASE_URL + "/images/projects/project2.png"}
                   alt="Library Management Platform"
                 />
               </div>
@@ -92,7 +95,12 @@ const AppShowcase = () => {
 
             <div className="project" ref={ycDirectoryRef}>
               <div className="image-wrapper bg-[#FFE7EB]">
-                <img src="/images/projects/project3.png" alt="YC Directory App" />
+                <img
+                  src={
+                    import.meta.env.BASE_URL + "/images/projects/project3.png"
+                  }
+                  alt="YC Directory App"
+                />
               </div>
               <h2>
                 <a
